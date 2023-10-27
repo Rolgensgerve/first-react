@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(45deg, transparent 20%, black 25%, transparent 25%), 
+                      linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%), 
+                      linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+                      radial-gradient(gray 2px, transparent 0);
+    background-size: 30px 30px, 30px 30px;
+    font-family: 'Manjari', sans-serif;
+}
+
+
+.container {
+    background-color: white;
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+
+    display: grid;
+    gap:1.6em;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container > .header,
+.container > .content,
+.container > .sidebar,
+.container > .footer,
+.container > div {
+    background-color: white;
+    padding: 20px;
+    border : 1px solid #000;
+}
+
+
+.container .header,
+.container .footer {
+    grid-column: 1/6;
+    background-color: #1e272e;
+    color: white;
+}

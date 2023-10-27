@@ -1,0 +1,20 @@
+.container .content {
+    grid-column: span 3;
+}
+
+.content > .article {
+    background-color: #808e90;
+    padding: 20px;
+    margin-top: 5px;
+    color: #dfe6e9;
+}
+
+.content .article h2,
+.content .article p {
+    padding: 10px;
+}
+
+
+
+
+
